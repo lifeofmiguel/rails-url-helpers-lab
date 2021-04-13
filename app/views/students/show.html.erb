@@ -1,1 +1,5 @@
 <h1><%= @student.to_s %></h1>
+
+<% @student.each do |post| %>
+    <div><%= link_to post.student, post_path(post) %></div>
+  <% end %>
